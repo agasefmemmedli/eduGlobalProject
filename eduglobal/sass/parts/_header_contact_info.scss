@@ -1,0 +1,47 @@
+#header-contact-info{
+    
+    background-color: $bg-color;
+    color: $hepler-color-white;
+    font-size: $font-size-span;
+    padding: 15px 0px;
+    .contact{
+        li{
+            a{
+                
+                i{
+                    margin: 0px 2px;
+                    font-size: $font-size-text;
+
+                }
+                
+            }
+        }
+    }
+    .social{
+        li{
+            a{
+                margin: 0px 8px;
+                i{
+                    
+                }
+            }
+            .border-left{
+                margin: 0;
+                padding-left: 8px;
+            }
+            
+        }
+    }
+    .button{
+        li{
+             overflow: hidden;
+        }
+       
+    }
+}
+
+
+#myNavbar{
+
+
+}

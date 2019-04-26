@@ -1,0 +1,31 @@
+.btn-warning{
+color: $hepler-color-white!important;
+background-color: $color-primary-light ;
+overflow: hidden;
+position: relative;
+    &:hover{
+        color: $hepler-color-white!important;
+        background-color: $color-primary-dark ;
+    }
+
+    &::before{
+        content: "";
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100%;
+        width: 2em;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -3em;
+        transform: skewX(-45deg) translateX(0);
+        @include transition(all 0.5s);
+    }
+    &:hover::before{
+    transform: skewX(-45deg) translateX(15em);}
+    
+}
+
+.btn-outline-light{
+
+    &:hover{}
+}
