@@ -1,0 +1,85 @@
+#catigories{
+    padding: 100px 0px;
+    .items{
+        position: relative;
+        text-align: center;
+        .item{
+            padding: 30px 20px;
+            border-radius: 5px;
+            a{
+                color: white;
+                i{
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 30px;
+                }
+            }
+        }
+        // costomize prew next button
+        .owl-prev {
+            position: absolute;
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+            background-color:$hepler-color-white; 
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+            top: 35%;
+            left: -40px;
+            z-index: 2;
+        }
+        .owl-next {
+            position: absolute;
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+            background-color:$hepler-color-white; 
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+            top: 35%;
+            right: -40px;
+            z-index: 2;
+        }
+        .owl-prev span, .owl-next span {
+                    font-size: 30px;
+                    color: #000;
+        }
+        &:hover{
+            .owl-prev {
+                -webkit-animation-name: left; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+                -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+                animation-name: left;
+                animation-duration: 0.8s;
+                animation-fill-mode: forwards;
+            }
+            .owl-next {
+                -webkit-animation-name: right; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+                -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+                animation-name: right;
+                animation-duration: 0.8s;
+                animation-fill-mode: forwards;
+            }
+               /* Safari 4.0 - 8.0 */
+               @-webkit-keyframes left {
+                from {opacity: 0; left:-40px;}
+                to {opacity: 1; left:-10px;}
+              }
+              
+              /* Standard syntax */
+              @keyframes left {
+                from {opacity: 0; left:-40px;}
+                to {opacity: 1; left:-10px}
+              }
+              @-webkit-keyframes right {
+                from {opacity: 0; right:-40px;}
+                to {opacity: 1; right:-10px}
+              }
+              
+              /* Standard syntax */
+              @keyframes right {
+                from {opacity: 0; right:-40px;}
+                to {opacity: 1; right:-10px}
+              }
+    }
+    }
+}

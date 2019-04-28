@@ -66,6 +66,30 @@ li a:hover {
   color: #FFBC09 !important;
 }
 
+.bg-danger {
+  background-color: #f5576c;
+}
+
+.bg-success {
+  background-color: #B3D369;
+}
+
+.bg-orange {
+  background-color: #FF9131;
+}
+
+.bg-warning {
+  background-color: #FFBC09;
+}
+
+.bg-pink {
+  background-color: #FF69B4;
+}
+
+.bg-primary {
+  background-color: #36D4ED;
+}
+
 .btn-warning {
   color: #FFF !important;
   background-color: #FFBC09;
@@ -94,8 +118,8 @@ li a:hover {
 }
 
 .btn-warning:hover::before {
-  -webkit-transform: skewX(-45deg) translateX(15em);
-          transform: skewX(-45deg) translateX(15em);
+  -webkit-transform: skewX(-45deg) translateX(20rem);
+          transform: skewX(-45deg) translateX(20rem);
 }
 
 .btn-outline-light {
@@ -117,8 +141,8 @@ li a:hover {
 }
 
 .btn-outline-light:hover::before {
-  -webkit-transform: translateX(15em);
-          transform: translateX(15em);
+  -webkit-transform: translateX(20rem);
+          transform: translateX(20rem);
 }
 
 #header-contact-info {
@@ -264,6 +288,10 @@ li a:hover {
   color: #ccc;
 }
 
+.section_header_text {
+  margin-bottom: 15px;
+}
+
 .section_header_text h2 {
   font-size: 32px;
   font-family: "Rubik", sans-serif;
@@ -342,5 +370,134 @@ li a:hover {
   color: #888888;
   margin-bottom: 1rem;
   line-height: 1.5;
+}
+
+#catigories {
+  padding: 100px 0px;
+}
+
+#catigories .items {
+  position: relative;
+  text-align: center;
+}
+
+#catigories .items .item {
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+#catigories .items .item a {
+  color: white;
+}
+
+#catigories .items .item a i {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+#catigories .items .owl-prev {
+  position: absolute;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  background-color: #FFF;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  top: 35%;
+  left: -40px;
+  z-index: 2;
+}
+
+#catigories .items .owl-next {
+  position: absolute;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  background-color: #FFF;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  top: 35%;
+  right: -40px;
+  z-index: 2;
+}
+
+#catigories .items .owl-prev span, #catigories .items .owl-next span {
+  font-size: 30px;
+  color: #000;
+}
+
+#catigories .items:hover {
+  /* Safari 4.0 - 8.0 */
+  /* Standard syntax */
+  /* Standard syntax */
+}
+
+#catigories .items:hover .owl-prev {
+  -webkit-animation-name: left;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.8s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards;
+  /* Safari 4.0 - 8.0 */
+  animation-name: left;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+#catigories .items:hover .owl-next {
+  -webkit-animation-name: right;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.8s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards;
+  /* Safari 4.0 - 8.0 */
+  animation-name: right;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes left {
+  from {
+    opacity: 0;
+    left: -40px;
+  }
+  to {
+    opacity: 1;
+    left: -10px;
+  }
+}
+
+@keyframes left {
+  from {
+    opacity: 0;
+    left: -40px;
+  }
+  to {
+    opacity: 1;
+    left: -10px;
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    opacity: 0;
+    right: -40px;
+  }
+  to {
+    opacity: 1;
+    right: -10px;
+  }
+}
+
+@keyframes right {
+  from {
+    opacity: 0;
+    right: -40px;
+  }
+  to {
+    opacity: 1;
+    right: -10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

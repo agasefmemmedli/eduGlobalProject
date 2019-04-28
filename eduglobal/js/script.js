@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     ResetText();
     TetxAnimation();
-    var owl = $('.owl-carousel');
+    var owl = $('#primary-slider .owl-carousel');
     owl.owlCarousel();
     // Listen to owl events
     owl.on('translated.owl.carousel', function (event) { 
@@ -85,5 +85,30 @@ $(document).ready(function () {
         
 
     }
+
+
+
+      // costomization owlCarusel for category slider
+      console.log($('#catigories .items .item'));
+      $("#catigories .items").owlCarousel({
+        loop:true,
+        margin:15,
+        nav:true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
     
 });
