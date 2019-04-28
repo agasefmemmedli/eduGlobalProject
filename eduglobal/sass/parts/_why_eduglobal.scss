@@ -1,0 +1,59 @@
+#whyEduglobal{
+    background-color: #F7F7F7;
+    padding: 100px 0px;
+    .icon-box{
+        text-align: center;
+        padding: 30px;
+        z-index: 9;
+        margin-top: 30px;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0px 4px 20px rgba(101, 101, 101, 0.1);
+        border-radius: 10px;
+        
+        &:hover.icons::before{
+            margin: 5px;
+            opacity: 1;
+        }
+        .icon{
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                border: 3px solid #fff;
+                border-radius: 100%;
+                margin: 0px;
+                opacity: 0;
+                transition: all 0.2s ease-in-out;
+            }
+            border-radius: 100%;
+            display: inline-block;
+            padding: 20px;
+            position: relative;
+            img{
+                max-width: 60px;
+                padding: 5px;
+            }
+
+        }
+        .about-icon{
+            h5{
+                padding-bottom: 5px;
+                font-size: $font-size-3;
+                font-family: $font-familyRubik;
+                color: $header-text-color;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+            p{
+                font-size: $font-size-text;
+                color: $text-color;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+        }
+        
+    }
+}

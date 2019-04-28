@@ -1,0 +1,28 @@
+
+
+.section_header_text{
+    h2{
+        font-size: $font-size-1;
+        font-family: $font-familyRubik;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: $header-text-color;
+    }
+    p{
+        font-size: $font-size-text;
+        color: $text-color;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
+// <div class="row justify-content-center">
+//     <div class="col-lg-6 text-center">
+//         <div class="section_header_text">
+//             <h2>Why Choose Eduglobal</h2>
+//             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+//             anything embarrassing hidden in the middle of text</p>
+//         </div>
+//     </div>
+// </div>

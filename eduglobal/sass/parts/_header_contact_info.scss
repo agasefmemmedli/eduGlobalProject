@@ -21,9 +21,7 @@
         li{
             a{
                 margin: 0px 8px;
-                i{
-                    
-                }
+                
             }
             .border-left{
                 margin: 0;
@@ -42,6 +40,12 @@
 
 
 #myNavbar{
-
-
+        .navbar {
+            @include transition(all 0.3s);
+            top: 68px;
+        }
+    
+        .scrolled {
+            top: 0px;
+        }
 }

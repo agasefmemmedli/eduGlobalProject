@@ -16,7 +16,7 @@ position: relative;
         display: block;
         position: absolute;
         top: 0;
-        left: -3em;
+        left: -6rem;
         transform: skewX(-45deg) translateX(0);
         @include transition(all 0.5s);
     }
@@ -26,6 +26,20 @@ position: relative;
 }
 
 .btn-outline-light{
-
-    &:hover{}
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content: "";
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100%;
+        width: 2em;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -6rem;
+        
+        @include transition(all 0.5s);
+    }
+    &:hover::before{
+    transform:  translateX(15em);}
 }
