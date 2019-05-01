@@ -24,7 +24,6 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
-
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',
         responsive: {
@@ -100,6 +99,9 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         responsive:{
             0:{
+                items:2
+            },
+            500:{
                 items:3
             },
             600:{

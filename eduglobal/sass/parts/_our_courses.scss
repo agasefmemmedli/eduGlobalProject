@@ -1,0 +1,113 @@
+#our_courses{
+   margin: 100px 0px;
+    overflow: hidden;
+
+    .content-box{
+        overflow: hidden;
+        &:hover .content-img{
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            
+        }
+        margin-top: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        .content-img{
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+            a{
+                img{
+                    width: 100%;
+                    transition: all 0.5s ease-in-out;
+                    -moz-transform: scale(1);
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    width: 100%;
+                }
+            }
+
+        }
+        .about{
+            padding: 15px;
+            h4{
+                font-size: 18px;
+                font-family: $font-familyRubik;
+                font-weight: 500;
+                margin-bottom: 1rem;
+                color: $header-text-color;
+                a{
+                    @include transition(all 0.5s);
+                    color: $header-text-color;
+                    &:hover{
+                        color: $color-primary-light!important ;
+                    }
+            }
+            
+            
+        }
+        p{
+            font-size: $font-size-text;
+            color: $text-color;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .courses_info {
+            .rating_stars{
+                i{
+                    color: $color-primary-light;
+
+                    
+                }
+                
+            }
+            .content_meta{
+                li{
+                    margin: 0 5px;
+                    @include transition(all 0.5s);
+                    color: $font-size-text;
+                    &:hover{
+                    color: $color-primary-light!important ;
+                    }
+                }
+            }
+        }
+        
+    }
+    .footer{
+        padding: 15px;
+        .teacher{
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+            a{
+                margin: 0 10px;
+                @include transition(all 0.5s);
+                color: $header-text-color;
+                
+            }
+            &:hover a{
+                color: $color-primary-light!important ;}
+            
+
+            }
+            
+        }
+        .price{
+            span{
+                &:hover{
+                    background-color: #007bff;
+                }
+        }
+
+    }
+}
+.all_courses{
+    margin-top: 50px;
+}
+}
