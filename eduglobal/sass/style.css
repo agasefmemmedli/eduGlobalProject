@@ -699,6 +699,7 @@ li a:hover {
 }
 
 #our_courses .content-box .footer {
+  border-top: 1px solid #8888883b;
   padding: 15px;
 }
 
@@ -777,5 +778,245 @@ li a:hover {
 
 #counter .counter-box .counter-content p {
   color: white;
+}
+
+#events {
+  padding: 100px 0;
+}
+
+#events .content-box {
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#events .content-box:hover .content-img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#events .content-box .content-img {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#events .content-box .content-img a img {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  width: 100%;
+}
+
+#events .content-box .event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 75px;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#events .content-box .event-date h5 {
+  font-size: 14px;
+  padding: 5px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+
+#events .content-box .event-date h5 span {
+  display: block;
+  font-size: 24px;
+  padding: 5px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Rubik", sans-serif;
+}
+
+#events .content-box .event-date .event-time {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #FFBC09;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  line-height: 1.4;
+}
+
+#events .content-box .about {
+  padding: 15px;
+}
+
+#events .content-box .about h4 {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #292b2c;
+}
+
+#events .content-box .about h4 a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #292b2c;
+}
+
+#events .content-box .about h4 a:hover {
+  color: #FFBC09 !important;
+}
+
+#events .content-box .about .list-none {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#events .content-box .about .list-none li {
+  float: left;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+#events .content-box .about .list-none li i {
+  margin-right: 6px;
+  font-size: 14px;
+  color: #888888;
+}
+
+#events .content-box .about .list-none li .text-default {
+  color: #FFBC09;
+}
+
+#events .content-box .about p {
+  font-size: 16px;
+  color: #888888;
+  line-height: 1.5;
+}
+
+#register-now {
+  padding-top: 100px;
+  background-image: url(../images/pattern_bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-color: #07294D;
+}
+
+#register-now .register-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8%;
+  border-radius: 10px;
+}
+
+#register-now .register-form .head {
+  margin: 16px;
+  text-align: start;
+  width: 100%;
+}
+
+#register-now .register-form .head h2 {
+  font-weight: 500;
+  font-size: 32px;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+#register-now .register-form .head h2 span {
+  color: #FFBC09;
+}
+
+#register-now .register-form p {
+  margin: 0 16px 16px 16px;
+  text-align: start;
+  width: 100%;
+  color: white;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+#register-now .register-form .form-group textarea {
+  min-height: 165px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#register-now .register-form .form-group input, #register-now .register-form .form-group select, #register-now .register-form .form-group textarea {
+  background-color: transparent;
+  color: #fff;
+}
+
+#register-now .register-form .form-group input::-webkit-input-placeholder, #register-now .register-form .form-group select::-webkit-input-placeholder, #register-now .register-form .form-group textarea::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#register-now .register-form .form-group input:-ms-input-placeholder, #register-now .register-form .form-group select:-ms-input-placeholder, #register-now .register-form .form-group textarea:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#register-now .register-form .form-group input::-ms-input-placeholder, #register-now .register-form .form-group select::-ms-input-placeholder, #register-now .register-form .form-group textarea::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#register-now .register-form .form-group input::placeholder, #register-now .register-form .form-group select::placeholder, #register-now .register-form .form-group textarea::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#register-now .register-form .form-group .form-control {
+  height: 45px;
+  padding: 10px 20px;
+}
+
+#register-now .register-form .btn {
+  padding: 12px 30px;
+}
+
+#gallery {
+  padding: 100px 0px;
+}
+
+#gallery .button-group ul .current a {
+  background-color: #FFBC09;
+  color: #fff !important;
+}
+
+#gallery .button-group ul li {
+  display: inline-block;
+  margin: 0 3px;
+  overflow: hidden;
+}
+
+#gallery .button-group ul li a {
+  background-color: #eee;
+  padding: 5px 25px;
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 4px;
+}
+
+#gallery .button-group ul li a:hover {
+  background-color: #FFBC09;
+  color: #fff !important;
+}
+
+#gallery .grid .element-item img {
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

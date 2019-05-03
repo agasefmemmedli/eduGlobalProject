@@ -1,0 +1,45 @@
+#gallery{
+    padding: 100px 0px;
+    .button-group{
+        ul{
+            .current{
+                a{
+                     background-color: #FFBC09;
+                    color: #fff!important; 
+                }
+            }
+            li{ 
+                display: inline-block;
+                margin: 0 3px;
+                overflow: hidden;
+                
+                a{
+                background-color: #eee;
+                padding: 5px 25px;
+                display: block;
+                font-size: 16px;
+                text-transform: capitalize;
+                border-radius: 4px;
+                &:hover{
+                    background-color: #FFBC09;
+                    color: #fff!important;    
+                }
+            }
+            }
+            
+            
+        }
+        
+    }
+    .grid{
+        .element-item{
+            
+                       
+            img{
+                padding: 5px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+        }
+    }
+}

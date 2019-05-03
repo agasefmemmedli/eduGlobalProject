@@ -45,11 +45,11 @@ $(document).ready(function () {
     var owl = $('#primary-slider .owl-carousel');
     owl.owlCarousel();
     // Listen to owl events
-    owl.on('translated.owl.carousel', function (event) { 
+    owl.on('translated.owl.carousel', function (event) {
         TetxAnimation();
     });
-     owl.on('change.owl.carousel', function (event) {
-        ResetText(); 
+    owl.on('change.owl.carousel', function (event) {
+        ResetText();
     });
     // reset text animation
     function ResetText() {
@@ -72,45 +72,80 @@ $(document).ready(function () {
         $("#primary-slider .items .active h1").animate({
             top: '40%',
             opacity: '1'
-        },500);
+        }, 500);
         $("#primary-slider .items .active h4").animate({
             top: '50%',
             opacity: '1'
-        },900);
+        }, 900);
         $("#primary-slider .items .active ul").animate({
             top: '60%',
             opacity: '1'
-        },900);
-        
+        }, 900);
+
 
     }
 
 
 
-      // costomization owlCarusel for category slider
-      console.log($('#catigories .items .item'));
-      $("#catigories .items").owlCarousel({
-        loop:true,
-        margin:15,
-        nav:true,
+    // costomization owlCarusel for category slider
+
+    $("#catigories .items").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
         dots: false,
         autoplay: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
-        responsive:{
-            0:{
-                items:2
+        responsive: {
+            0: {
+                items: 2
             },
-            500:{
-                items:3
+            500: {
+                items: 3
             },
-            600:{
-                items:4
+            600: {
+                items: 4
             },
-            1000:{
-                items:5
+            1000: {
+                items: 5
             }
         }
     })
-    
+
+
+
+    $("[data-filter='*']").click(function (e) {
+        e.defaultPrevented();
+        $('.grid').isotope({ filter: '.element-item' });
+        $('.current').removeClass('current');
+        $(this).addClass('current');
+    });
+
+    $("[data-filter='.library']").click(function () {
+        $('.grid').isotope({ filter: '.library' });
+        $('.current').removeClass('current');
+        $(this).addClass('current');
+    });
+
+    $("[data-filter='.campus']").click(function () {
+        $('.grid').isotope({ filter: '.campus' });
+        $('.current').removeClass('current');
+        $(this).addClass('current');
+    });
+
+    $("[data-filter='.events']").click(function () {
+        $('.grid').isotope({ filter: '.events' });
+        $('.current').removeClass('current');
+        $(this).addClass('current');
+    });
+
+
+
+    $('.grid').isotope({
+        // options
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows'
+    });
+
 });

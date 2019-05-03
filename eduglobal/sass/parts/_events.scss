@@ -1,0 +1,112 @@
+#events{
+    padding: 100px 0;
+    .content-box{
+        overflow: hidden;
+        position: relative;
+        &:hover .content-img{
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            
+        }
+        margin-top: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        .content-img{
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+            a{
+                img{
+                    width: 100%;
+                    transition: all 0.5s ease-in-out;
+                    -moz-transform: scale(1);
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    width: 100%;
+                }
+            }
+
+        }
+        .event-date{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 75px;
+            background-color: #fff;
+            text-align: center;
+            width: 100%;
+            border-radius: 5px;
+            h5{
+                font-size: $font-size-span;
+                padding: 5px;
+                font-weight: 500;
+                font-family: $font-familyRubik;
+                 span{
+                    display: block;
+                    font-size: $font-size-2;
+                    padding: 5px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    font-family: $font-familyRubik;
+                }
+                
+            }
+            .event-time{
+                    display: block;
+                    color: #fff;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    background-color: $color-primary-light;
+                    padding: 5px;
+                    border-radius: 0 0 5px 5px;
+                    line-height: 1.4;
+                }
+        }
+        .about{
+            padding: 15px;
+            h4{
+                font-size: 18px;
+                font-family: $font-familyRubik;
+                font-weight: 500;
+                margin-bottom: 1rem;
+                color: $header-text-color;
+                a{
+                    @include transition(all 0.5s);
+                    color: $header-text-color;
+                    &:hover{
+                        color: $color-primary-light!important ;
+                    }
+            }
+            
+            
+        }
+        .list-none{
+            display: flex;
+            li{
+                float: left;
+                padding-right: 15px;
+                font-size: 15px;
+                i{
+                    margin-right: 6px;
+                    font-size: 14px;
+                    color: $text-color;
+                }
+                .text-default{
+                    color: $color-primary-light ;
+
+                }
+            }
+        }
+        p{
+            font-size: $font-size-text;
+            color: $text-color;
+            line-height: 1.5;
+        }
+        
+    }
+    
+}
+}
