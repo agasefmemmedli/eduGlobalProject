@@ -25,21 +25,63 @@ position: relative;
     
 }
 
-.btn-outline-light{
+
+.btn-outline-light {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    background-color: transparent;
+    border-style: solid;
+    padding: 12px 28px;
+    position: absolute;
+    color: white;
     overflow: hidden;
-    position: relative;
-    &::before{
+    z-index: 2;
+    &::before {
         content: "";
-        background-color: rgba(255, 255, 255, 0.5);
-        height: 100%;
-        width: 2em;
-        display: block;
+        width: 160px !important;
+        height: 55px !important;
         position: absolute;
-        top: 0;
-        left: -6rem;
-        
-        @include transition(all 0.5s);
-    }
-    &:hover::before{
-    transform:  translateX(20rem);}
-}
+        background-color: white;
+        top: -5px;
+        left: -200px;
+        z-index: 9;
+      }
+      &:hover::before {
+        -webkit-transition: all 0.6s;
+        transition: all 0.6s;
+        top: -5px;
+        left: -5px;
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        width: 160px;
+        height: 55px;
+        position: absolute;
+        background-color: white;
+        top: -5px;
+        left: 170px;
+        -webkit-transition: all 0.6s;
+        transition: all 0.6s;
+      }
+      &:hover {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        color: #FFBC09;
+      }
+      &:hover::after {
+        z-index: -1;
+        -webkit-transition: 0.6s;
+        transition: 0.6s;
+        top: -5px;
+        left: -5px;
+        -webkit-transition: 0s;
+        transition: 0s;
+        -webkit-transition-delay: 0.6s;
+                transition-delay: 0.6s;
+      }
+      
+  }
+  
+ 
+  
