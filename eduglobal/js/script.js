@@ -114,7 +114,7 @@ $(document).ready(function () {
     })
 
 
-
+// filter for our gallery
     $("[data-filter='*']").click(function (e) {
         e.defaultPrevented();
         $('.grid').isotope({ filter: '.element-item' });
@@ -141,11 +141,61 @@ $(document).ready(function () {
     });
 
 
-
+// instalise isotope
     $('.grid').isotope({
         // options
         itemSelector: '.element-item',
         layoutMode: 'fitRows'
     });
+
+
+
+
+
+    // instalise owl carusel for students say 
+    $('#student-say .items').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:2
+            }
+        }
+    })
+
+
+
+        // instalise owl carusel for clients logo
+        $('#clients .items').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        })
 
 });
