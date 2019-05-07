@@ -154,7 +154,7 @@ li a:hover {
   background-color: transparent;
   border-style: solid;
   padding: 12px 28px;
-  position: absolute;
+  position: relative;
   color: white;
   overflow: hidden;
   z-index: 2;
@@ -609,12 +609,12 @@ li a:hover {
   color: #292b2c;
 }
 
-#about_us .about_us_img {
+#about_us .right-action {
   position: relative;
   z-index: 1;
 }
 
-#about_us .about_us_img::before {
+#about_us .right-action::before {
   position: absolute;
   content: "";
   top: 0;
@@ -624,13 +624,13 @@ li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#about_us a {
+#about_us .right-action a {
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
-#about_us a i {
+#about_us .right-action a i {
   font-size: 15px;
   padding: 20px;
   background-color: white;
@@ -639,7 +639,7 @@ li a:hover {
   z-index: 999;
 }
 
-#about_us a::after {
+#about_us .right-action a::after {
   position: absolute;
   content: '';
   width: 80px;
@@ -764,6 +764,32 @@ li a:hover {
 
 #our_courses .all_courses {
   margin-top: 50px;
+}
+
+#our_courses .pages {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+#our_courses .pages span {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid #adadad;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#our_courses .pages span:first-child {
+  padding: 8px 12px;
+}
+
+#our_courses .pages span:nth-child(2) {
+  background-color: #FFBC09;
+  color: white;
+  border-color: #FFBC09;
 }
 
 #counter {
@@ -943,6 +969,32 @@ li a:hover {
   line-height: 1.5;
 }
 
+#events .pages {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+#events .pages span {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid #adadad;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#events .pages span:first-child {
+  padding: 8px 12px;
+}
+
+#events .pages span:nth-child(2) {
+  background-color: #FFBC09;
+  color: white;
+  border-color: #FFBC09;
+}
+
 #register-now {
   padding-top: 100px;
   background-image: url(../images/pattern_bg.png);
@@ -1027,7 +1079,7 @@ li a:hover {
   padding: 100px 0px;
 }
 
-#gallery .button-group ul .current a {
+#gallery .button-group ul .current h5 {
   background-color: #FFBC09;
   color: #fff !important;
 }
@@ -1038,7 +1090,7 @@ li a:hover {
   overflow: hidden;
 }
 
-#gallery .button-group ul li a {
+#gallery .button-group ul li h5 {
   background-color: #eee;
   padding: 5px 25px;
   display: block;
@@ -1047,7 +1099,7 @@ li a:hover {
   border-radius: 4px;
 }
 
-#gallery .button-group ul li a:hover {
+#gallery .button-group ul li h5:hover {
   background-color: #FFBC09;
   color: #fff !important;
 }
@@ -1446,38 +1498,41 @@ li a:hover {
   line-height: 1.5;
 }
 
-#footer-nav i {
+#footer-nav .contact p i {
   margin-right: 10px;
 }
 
-#footer-nav a {
+#footer-nav .navigation-footer {
+  padding: 0 40px 0 20px;
+  position: relative;
+}
+
+#footer-nav .navigation-footer ul {
+  padding: 0;
+}
+
+#footer-nav .navigation-footer ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  list-style: none;
+  padding-bottom: 25px;
+}
+
+#footer-nav .navigation-footer ul li:hover {
+  margin-left: 10px;
+}
+
+#footer-nav .navigation-footer ul li a {
+  position: absolute;
+  display: inline-block;
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-#footer-nav a:hover {
+#footer-nav .navigation-footer ul li a:hover {
   color: #FFBC09;
   text-decoration: none;
-}
-
-#footer-nav a .navigation-footer {
-  padding: 0 40px 0 20px;
-}
-
-#footer-nav a .navigation-footer ul {
-  padding: 0;
-}
-
-#footer-nav a .navigation-footer ul li {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  list-style: none;
-  padding-bottom: 10px;
-}
-
-#footer-nav a .navigation-footer ul li:hover {
-  margin-left: 10px;
 }
 
 #footer-nav h5 {
@@ -1490,7 +1545,7 @@ li a:hover {
 }
 
 #footer-nav .posts p {
-  font-size: 16px;
+  font-size: 12px;
   color: white;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -1562,5 +1617,40 @@ li a:hover {
 #private a:hover {
   color: #FFBC09;
   text-decoration: none;
+}
+
+#secondary-header {
+  background-image: url("../images/about_bg.jpg");
+  background-size: cover;
+  background-position-y: center;
+}
+
+#secondary-header .container-fluid {
+  padding: 80px 0;
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#secondary-header .container-fluid h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
+}
+
+#secondary-header .container-fluid h5 {
+  color: white;
+  line-height: 50px;
+}
+
+#secondary-header .container-fluid h5 a {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#secondary-header .container-fluid h5 a:hover {
+  text-decoration: none;
+  color: #DF9C00;
 }
 /*# sourceMappingURL=style.css.map */

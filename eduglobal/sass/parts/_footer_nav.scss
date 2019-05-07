@@ -3,41 +3,50 @@
     background-color: #3b3b3b;
     color: white;
 
+    
         .contact{
         width: 25%;
-        p{font-size: $font-size-text;
+        p{
+          font-size: $font-size-text;
             color: white;
             margin-bottom: 1rem;
             line-height: 1.5;
+            i {
+              margin-right: 10px;
+          }
+        }
 
         }
-        }
-        i {
-            margin-right: 10px;
-        }
-      a {
-        color: white;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-        &:hover {
-            color: #FFBC09;
-            text-decoration: none;
-        }
         .navigation-footer {
-            padding: 0 40px 0 20px;
-            ul {
-                padding: 0;
-                li {
-                    -webkit-transition: 0.3s;
-                    transition: 0.3s;
-                    list-style: none;
-                    padding-bottom: 10px;
-                    &:hover {
-                        margin-left: 10px;
+          padding: 0 40px 0 20px;
+          position: relative;
+          ul {
+              padding: 0;
+              li {
+                  -webkit-transition: 0.3s;
+                  transition: 0.3s;
+                  list-style: none;
+                  
+                  padding-bottom: 25px;
+                  &:hover {
+                      margin-left: 10px;
+                    }
+                    a {
+                      position: absolute;
+                      display: inline-block;
+                      color: white;
+                      -webkit-transition: 0.3s;
+                      transition: 0.3s;
+                      &:hover {
+                          color: #FFBC09;
+                          text-decoration: none;
                       }
-                  }
-              }
-          }
+                }
+            }
+        }
+        
+
+        
         
         
         
@@ -50,7 +59,7 @@
             padding-right: 15px;
             width: 280px;
             p {
-                font-size: $font-size-text;
+                font-size: 12px;
                 color: white;
                 margin-bottom: 1rem;
                 line-height: 1.5;
