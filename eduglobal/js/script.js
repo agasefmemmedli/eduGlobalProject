@@ -44,14 +44,17 @@ $(document).ready(function () {
     TetxAnimation();
     var owl = $('#primary-slider .owl-carousel');
     owl.owlCarousel();
-    // Listen to owl events
+
+    // Listen to owl events  for primary slider section
     owl.on('translated.owl.carousel', function (event) {
         TetxAnimation();
     });
     owl.on('change.owl.carousel', function (event) {
         ResetText();
     });
-    // reset text animation
+
+
+    // reset text animation for primary slider section
     function ResetText() {
         $("#primary-slider h1").css({
             top: '30%',
@@ -66,7 +69,7 @@ $(document).ready(function () {
             opacity: '0'
         });
     }
-    // change text animation
+    // change text animation for primary slider section
     function TetxAnimation() {
 
         $("#primary-slider .items .active h1").animate({
@@ -114,9 +117,9 @@ $(document).ready(function () {
     })
 
 
-// filter for our gallery
-    $("[data-filter='*']").click(function (e) {
-        e.defaultPrevented();
+// filter for gallery section
+    $("[data-filter='*']").click(function () {
+        
         $('.grid').isotope({ filter: '.element-item' });
         $('.current').removeClass('current');
         $(this).addClass('current');
@@ -141,7 +144,7 @@ $(document).ready(function () {
     });
 
 
-// instalise isotope
+// instalise isotope for gallery section
     $('.grid').isotope({
         // options
         itemSelector: '.element-item',
@@ -152,7 +155,7 @@ $(document).ready(function () {
 
 
 
-    // instalise owl carusel for students say 
+    // instalise owl carusel for students say section
     $('#student-say .items').owlCarousel({
         loop:true,
         margin:10,
@@ -176,7 +179,7 @@ $(document).ready(function () {
 
 
 
-        // instalise owl carusel for clients logo
+        // instalise owl carusel for clients logo section
         $('#clients .items').owlCarousel({
             loop:true,
             margin:10,
